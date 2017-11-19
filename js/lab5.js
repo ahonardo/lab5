@@ -58,6 +58,12 @@ $(document).ready(function() {
 
 	// insert click handler here
 	// so that it will be registered once the page has been loaded
+	$(".likeBtn").click(function() {
+ 	console.log("like button clicked");
+ 	tracker = ga.getAll()[0];
+	tracker.send('event', 'like', 'click');
+ 	// tracker code here, refer to slide #26
+});
 
 });
 
